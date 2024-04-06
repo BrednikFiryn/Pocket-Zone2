@@ -4,7 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Bullet
   - Zone
+  - BasicWeapon
+  - AuxiliaryWeapon
+  - EnemyHealth
+  - Enemy
+  - Health
   layers:
   - Default
   - TransparentFX
