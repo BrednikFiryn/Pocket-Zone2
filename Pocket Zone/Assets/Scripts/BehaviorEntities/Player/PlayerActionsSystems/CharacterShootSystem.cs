@@ -16,7 +16,7 @@ public class CharacterShootSystem : ComponentSystem
           {
               if (input.shootAction != null && input.shootAction is IAbility ability)
               {
-                  if (shootData.shoot > 0f)
+                  if (shootData.shoot > 0f && IAttack.attack)
                   {
                       ability.Execute();
                   }

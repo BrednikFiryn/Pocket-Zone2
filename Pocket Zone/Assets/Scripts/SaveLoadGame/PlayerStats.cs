@@ -50,6 +50,18 @@ public class PlayerStats : MonoBehaviour
         File.WriteAllText(filePath, jsonData);
     }
 
+    public void SaveDefaultData()
+    {
+        string filePath = Application.persistentDataPath + "/PocketZone_data.json";
+        PlayerData playerData = new PlayerData(_healthHero, _xPosHero, _yPosHero);
+        _healthHero = settingsWarrior.defHealth;
+        _xPosHero = settingsWarrior.defXpos;
+        _yPosHero = settingsWarrior.defYpos;
+
+        string jsonData = JsonUtility.ToJson(playerData);
+        File.WriteAllText(filePath, jsonData);
+    }
+
     public void Damage(float damage)
     {
         settingsWarrior.health -= damage;

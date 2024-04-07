@@ -15,5 +15,8 @@ MonoBehaviour:
   health: 0
   speed: 5
   damage: 0.1
-  startPoint: {fileID: 2845644256735530232, guid: f9a114d3aa2ac144ba3745d269058710, type: 3}
+  startPoint: {fileID: 2845644256735530232, guid: 1fcf160e58661e743b768a65d4de6512, type: 3}
   hero: {fileID: 7754413156770213366, guid: 4921e733fc51d3947bfb543b616d377b, type: 3}
+  defHealth: 1
+  defXpos: -5
+  defYpos: 0

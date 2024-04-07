@@ -540,6 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsWarrior: {fileID: 11400000, guid: 5771b1905d6f0864cabdbb113f328a05, type: 2}
+  player: {fileID: 0}
 --- !u!1 &1534781365
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +554,7 @@ GameObject:
   - component: {fileID: 1534781367}
   - component: {fileID: 1534781366}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: StartGameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

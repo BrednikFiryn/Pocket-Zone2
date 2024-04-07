@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using Zenject;
 
 public class HealthPlayer : MonoBehaviour
 {
@@ -10,12 +10,14 @@ public class HealthPlayer : MonoBehaviour
     private PlayerStats _playerStats;
     private Image _healthCount;
     private Animator _animDeath;
+    private IDeath _deathController;
     public float _health;
 
     private void Start()
     {
         _playerStats = FindObjectOfType<PlayerStats>();
         _animDeath = GetComponent<Animator>();
+        _deathController = FindObjectOfType<GameOver>();
         HealthStatus();
         HealthCheck();
     }
@@ -37,6 +39,7 @@ public class HealthPlayer : MonoBehaviour
             _animDeath.SetBool(_deathAnimHash, true);
             _playerStats.EntityDestroy();
             gameObject.GetComponent<Collider2D>().enabled = false;
+            _deathController.GameOverControll();
         }
         else if (_health > 1) _health = 1;
     }

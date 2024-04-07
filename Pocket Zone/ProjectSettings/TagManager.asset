@@ -11,6 +11,9 @@ TagManager:
   - EnemyHealth
   - Enemy
   - Health
+  - SpawnPoint
+  - Item
+  - ItemMenu
   layers:
   - Default
   - TransparentFX
